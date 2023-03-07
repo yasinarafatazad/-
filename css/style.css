@@ -1,0 +1,229 @@
+
+/* Common Css Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    max-width: 940px;
+    /* background: rgba(0,0, 0,0.1); */
+    margin: 0 auto;
+}
+.fixed{
+    clear: both;
+}
+/* Common Css End */
+
+/* Header Css Start */
+
+#header {
+    /* background: red; */
+    height: 80px;
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+}
+#header:after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right,rgb(0,0, 0 )rgba(0,0, 0,0.2 ),rgb(0,0, 0 ));
+    height: 5px;
+    width: 100%;
+    bottom: -5px;
+}
+.logo{
+    height: 50px;
+    width: 40%;
+    float: left;
+    position: relative;
+    float: left;
+}
+.logo h2{
+    /* text-align: center; */
+    color: deepskyblue;
+    font-family: 'Rubik Iso', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,-55%);
+}
+.logo p{
+    text-align: center;
+    color: darkseagreen;
+    font-family: cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, 50%);
+}
+.nav-item{
+    height: 80px;
+    line-height: 80px;
+    width: 60%;
+    float: left;
+}
+.nav-item ul{
+    float: right;
+}
+.nav-item ul li{
+    float: left;
+}
+.nav-item ul li a{
+    padding: 0 20px;
+    height: 100%;
+    line-height: 90px;
+    font-size: 35px;
+    color: black;
+    transition: all linear 0.3s;
+}
+.nav-item ul li a:hover{
+    color: darkseagreen;
+    /* background: #5D300A; */
+}
+
+/* Header Css End */
+
+/* Hero Css Start */
+#hero{
+    background: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+#hero:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0, 0,0.5 );
+    z-index: -1;
+}
+.hero-details{
+    color: white;
+    /* float: left; */
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+    /* background: teal; */
+}
+.hero-details h1{
+    color: #f3f3f3;font-family: 'Climate Crisis', cursive;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+}
+.hero-details h2{
+    color: deepskyblue;
+    font-size: 18px;
+    line-height: 18px;
+}
+.hero-details h3{
+    color: darkseagreen;
+    font-size: 15px;
+    line-height: 15px;
+}
+/* Hero Css End */
+
+/* Post css Start */
+#Post-Part{}
+.post{
+    /* height: 150px; */
+    width: 100%;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #000;
+}
+.caption{
+    margin-bottom: 5px;
+    padding: 3%;
+    font-family: 'Cinzel', serif;
+}
+.content{
+    height: 100%;
+}
+.content img{
+    height: 100%;
+    width: 100%;
+}
+/* Post css End */
+
+/* Footer Css Start */
+#footer{
+    height: 200px;
+    position: relative;
+}
+.footer-row-01{
+    height: 170px;
+    background: #333;
+}
+.footer-col-01{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.footer-logo {
+    padding: 20px 3%;
+}
+.footer-logo h2{
+    color: deepskyblue;
+    font-family: 'Rubik Iso', cursive;
+    text-align: center;
+    
+}
+.footer-logo p{
+    color: darkseagreen;
+    font-family: cursive;
+    text-align: center;
+}
+.footer-details p{
+    color: #f1f1f1;
+font-family: 'Mukti', 'EkusheyLohit', sans-serif;
+text-align: center;
+}
+.footer-col-02{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.footer-col-02 img{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.footer-row-02{
+    height: 30px;
+    width: 100%;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+}
+.footer-row-02 p{
+    line-height: 30px;
+    text-align: center;
+    color: #f1f1f1;
+}
+/* Footer Css End */
